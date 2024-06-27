@@ -1,0 +1,79 @@
+.earthWrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	
+	position: relative;
+	width: 100%;
+	min-height: 500px;
+}
+
+.earthWrapper-in {
+	width: 100%;
+}
+
+
+#earthPopover {
+    position: absolute;
+    left: -180px;
+    top: -180px;
+    max-width: 450px;
+    height: 180px;
+    background: black;
+    border-radius: 0;
+    transform: scale(0.001);
+    transition: transform 0.1s ease-out;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 16px;
+    text-align: left;
+	transform: scale(0.001);
+	transition: transform 0.1s ease-out;
+}
+
+#earthPopover.photo-appear {
+	transition: transform 0.15s ease-out;
+	transform: scale(1);
+}
+
+#earthPopover .header {
+    padding: 16px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#earthPopover .body {
+    padding: 16px 0;
+}
+#earthPopover .body p {
+    margin: 0;
+}
+
+#earthPopover .logo {
+    margin-right: 15px
+}
+#earthPopover .btn-sm{
+    padding: 2px 28px;
+    min-height: auto;
+}
+
+#close-photo {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 32px;
+	height: 32px;
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjQgMjAuMTg4bC04LjMxNS04LjIwOSA4LjItOC4yODItMy42OTctMy42OTctOC4yMTIgOC4zMTgtOC4zMS04LjIwMy0zLjY2NiAzLjY2NiA4LjMyMSA4LjI0LTguMjA2IDguMzEzIDMuNjY2IDMuNjY2IDguMjM3LTguMzE4IDguMjg1IDguMjAzeiIvPjwvc3ZnPg) center center no-repeat;
+	background-size: 16px 16px;
+	filter: drop-shadow(0 0 3px black);
+	cursor: pointer;
+	pointer-events: all;
+}
+
