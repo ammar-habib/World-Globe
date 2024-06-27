@@ -1,3 +1,3 @@
 For Live Preview.
-https://ammar-habib.github.io/World-Globe/mutation-events.html
+https://ammar-habib.github.io/world-globe/mutation-events.html
 
